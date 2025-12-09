@@ -1,0 +1,780 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latin Pos</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- Bootstrap Icons (for bi ... icons) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <!---------------------------- header ------------------------------>
+  <header>
+    <nav class="navbar navbar-dark bg-white py-2">
+      <div class="container-fluid" style="max-width:1140px;">
+        <!-- Logo Left -->
+        <div class="logo-wrapper d-flex align-items-center gap-2">
+          <a href="https://www.technospike.com/latin_pos">
+            <img src="img/logo.png" alt="Logo" class="logo-img">
+          </a>
+          <div class="logo-text">
+            <span class="logo-title">De Latino</span><br>
+            <span class="logo-title">a Latino</span>
+          </div>
+        </div>
+
+
+        <!-- Hamburger for Mobile Only -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Desktop Menu Only -->
+        <div class="d-none d-lg-flex w-60 justify-content-end">
+          <ul class="navbar-nav d-flex flex-row gap-4">
+            <li class="nav-item"><a class="nav-link" href="https://www.technospike.com/latin_pos">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#solution">Solución</a></li>
+            <li class="nav-item"><a class="nav-link" href="#atributos">Atributos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#price">Precios</a></li>
+            <li class="nav-item"><a class="contact-btn" href="#contact">Contáctenos</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-end text-bg-dark d-lg-none" tabindex="-1" id="offcanvasMenu"
+      aria-labelledby="offcanvasMenuLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav flex-column gap-3">
+          <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#solution">Solución</a></li>
+          <li class="nav-item"><a class="nav-link" href="#atributos">Atributos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#price">Precios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contáctenos</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!---------------------------- ABOUT ------------------------------>
+  <section class="hero-section">
+    <div class="custom-container d-flex flex-column flex-md-row align-items-center">
+
+      <!-- Left Content -->
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Bienvenidos al LatinPOS
+        </h1>
+
+        <p class="hero-desc">
+          LatinPOS es un software, en español, para la gestión de puntos de ventas en minimercados, cafeterías y “Food
+          Trucks”. Diseñado por Latinos, está orientado al mercado Latino dentro de USA. En explotación desde junio de
+          2020, en su diseño e implementación se incluyeron las principales funcionalidades presentes en los softwares
+          de este tipo con mayor penetración de mercado en la nación.
+        </p>
+
+        <!--<a href="#" class="hero-btn">Get A Quote</a>-->
+      </div>
+
+      <!-- Right Image -->
+      <div class="hero-image">
+        <img src="img/pos.png" alt="Hero Image">
+      </div>
+
+    </div>
+  </section>
+
+<!---------------------------- Solution ------------------------------>
+  <section class="section-wrapper">
+    <div class="container-fluid custom-container">
+      <div class="inner-box d-flex flex-column flex-md-row align-items-center">
+
+
+        <!-- Left Image -->
+        <div class="left-image flex-shrink-0">
+          <img src="img/img-mercado.jpg" alt="Solution Image" class="img-fluid" />
+        </div>
+
+
+        <!-- Right Content -->
+        <div class="right-content" id="solution">
+          <h2 class="title-text">Solución</h2>
+          <p class="desc-text mb-3">
+            El LatinPOS incorpora a las funciones comunes de un POS, otras propias de la forma de hacer negocios en los
+            mercados Latinos cuyos principales clientes son Latinos: “fiar”, “déjalo en fondo”, etc. Incluye, además,
+            funciones como la apertura y cierre de caja, movimientos de efectivo, listas de compras, registro de ventas
+            directas, etc. Todas muy fácil de usar.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Full Width Section -->
+  <section class="pos-manager-section">
+    <div class="pos-manager-container">
+
+      <!-- Section Title -->
+      <h2 class="pos-manager-title">Aplicaciones principales</h2>
+
+      <!-- POS Box -->
+      <div class="pos-box">
+        <img src="img/img-pos.png" alt="POS Image">
+        <h3>POS</h3>
+        <p>
+          Aplicación diseñada para ser utilizadas en los mercados. Está dotada de una interfaz optimizada para ser
+          utilizada principalmente a través de pantallas “Touch”. El POS concentra las funciones para el registro y
+          cobro de las ventas, a la vez que dispone de facilidades para el control de existencia, configuración básica
+          de productos y cambios menores en la configuración.
+        </p>
+      </div>
+
+      <!-- Manager Box -->
+      <div class="manager-box">
+        <img src="img/img-manager.png" alt="Manager Image">
+        <h3>Manager</h3>
+        <p>
+          Aplicación con funciones de configuración de mercados y productos, administración de usuarios y la gestión de
+          la información que se registra como resultado de la venta. El Manager está implementado como una aplicación
+          Windows estándar; con una interfaz cómoda y productiva para este tipo de tareas.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+<!---------------------------- services-section ------------------------------>
+
+  <section class="services-section" id="atributos">
+    <div class="container">
+      <div class="custom-max">
+
+        <div class="row g-4 services-row justify-content-center">
+
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="service-card" data-aos="fade-up" data-aos-once="true" data-aos-delay="50">
+              <div class="icon-circle"><i class="bi bi-box-seam"></i></div>
+
+              <h5 class="service-title">Amplia gama de equipamiento para escoger.</h5>
+
+              <div class="description-inner" aria-hidden="false">
+                <p class="service-desc mb-0">
+                  Implementadas en lo fundamental como aplicaciones Windows de escritorio, hay una amplia gama de
+                  equipamiento disponible; con precios asequibles a pequeños negocios y emprendedores. <br>
+                  De igual manera, si ya se dispone de equipos con este propósito, es muy probable que puedan ser
+                  utilizado, ya se trate de computador, lector de códigos de barra, impresora térmica, impresora de
+                  etiquetas, pantalla “touch” o caja registradora.<br>
+                  En el caso de que se disponga de un equipo, por ejemplo, una impresora, que no esté incluido entre los
+                  posibles a utilizar con el LatinPOS, existe la opción de extender el sistema para que pueda ser
+                  utilizado.
+
+                </p>
+              </div>
+
+              <a class="read-more-btn mt-3 d-inline-block">Ver más</a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="service-card" data-aos="fade-up" data-aos-once="true" data-aos-delay="120">
+              <div class="icon-circle"><i class="bi bi-hdd-stack"></i></div>
+
+              <h5 class="service-title">Datos en la nube. Seguridad y ubicuidad de la información.</h5>
+
+              <div class="description-inner">
+                <p class="service-desc mb-0">
+                  El hecho de que los datos registrados por el software estén almacenados en Microsoft Azure, le aporta
+                  al LatinPOS la robustez y seguridad con los altos estándares que ofrece esa plataforma y, a la vez, la
+                  ubicuidad para poder utilizarlo desde cualquier lugar donde se disponga de un computador y una
+                  conexión a internet.
+                </p>
+              </div>
+
+              <a class="read-more-btn mt-3 d-inline-block">Ver más</a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="service-card" data-aos="fade-up" data-aos-once="true" data-aos-delay="190">
+              <div class="icon-circle"><i class="fa-regular fa-thumbs-up"></i></div>
+
+              <h5 class="service-title">Interfaz intuitiva y eficiente.</h5>
+
+              <div class="description-inner">
+                <p class="service-desc mb-0">
+                  El diseño del LatinPOS está orientado a la usabilidad. Su interfaz fue pensada para un uso eficiente,
+                  flexible y de fácil aprendizaje. Lo intuitivo del software hace que los usuarios se familiaricen con
+                  las funcionalidades básicas en muy poco tiempo; incluso con escasa o ninguna capacitación.
+                </p>
+              </div>
+
+              <a class="read-more-btn mt-3 d-inline-block">Ver más</a>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-4">
+            <div class="service-card" data-aos="fade-up" data-aos-once="true" data-aos-delay="260">
+              <div class="icon-circle"><i class="bi bi-person-lines-fill"></i></div>
+
+              <h5 class="service-title">Estaciones y usuarios</h5>
+
+              <div class="description-inner">
+                <p class="service-desc mb-0">
+                  El LatinPOS permite la utilización de más de una estación POS en cada mercado; tantas como el cliente
+                  considere conveniente. El acceso al POS es controlado por usuario y PIN. Se pueden configurar tantos
+                  usuarios como se requiera. En cada venta queda registrada la estación y el usuario que la
+                  realizó.<br><br>
+                  Los cobros de las estaciones habilitadas en un mercado van a parar a una misma caja. La apertura y
+                  cierre de caja es a voluntad. Se pueden registrar todas las ventas del día en la misma caja, se pueden
+                  hacer varios cierres de caja en el mismo día o se puede mantener la caja abierta por un período mayor.
+
+                </p>
+              </div>
+
+              <a class="read-more-btn mt-3 d-inline-block">Ver más</a>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-md-4">
+            <div class="service-card" data-aos="fade-up" data-aos-once="true" data-aos-delay="330">
+              <div class="icon-circle"><i class="bi bi-gear"></i></div>
+
+              <h5 class="service-title">Áreas y menús</h5>
+
+              <div class="description-inner">
+                <p class="service-desc mb-0">
+                  Con los productos configurados para la venta se crean menús. Un producto puede estar presente en uno o
+                  más menú y tener un precio diferenciado en cada uno. Al producto en el menú se le pueden asignar
+                  modificadores que permitan la selección de ingredientes: mostaza, mayonesa, kétchup; en el caso de un
+                  sándwich, o el tamaño de un café: grande, mediano o chico; por mencionar un par de ejemplos.<br><br>
+                  Un mercado puede contar con una o más áreas de venta. A cada área se le asignan la o las estaciones
+                  POS a utilizar y el menú con los productos que se van a vender en esa área. En cualquier momento se
+                  puede mover una estación POS de un área a otra o cambiar el menú a utilizar.
+
+                </p>
+              </div>
+
+              <a class="read-more-btn mt-3 d-inline-block">Ver más</a>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-md-4">
+            <div class="service-card" data-aos="fade-up" data-aos-once="true" data-aos-delay="400">
+              <div class="icon-circle"><i class="bi bi-bar-chart-line"></i></div>
+
+              <h5 class="service-title">Concepto de cadena como agrupación de mercados.</h5>
+
+              <div class="description-inner">
+                <p class="service-desc mb-0">
+                  El LatinPOS considera el concepto de “Cadena” como una entidad que incluye uno o más mercados. Cada
+                  mercado tiene su propia configuración, productos, precios, etc. Los usuarios, con los privilegios
+                  requeridos, pueden “moverse” con facilidad por los mercados de la cadena y aún más, consultar
+                  información a nivel de mercado y/o consolidada a nivel de cadena.
+                </p>
+              </div>
+
+              <a class="read-more-btn mt-3 d-inline-block">Ver más</a>
+            </div>
+          </div>
+          <!-- Card 7 -->
+          <div class="col-md-4">
+            <div class="service-card" data-aos="fade-up" data-aos-once="true" data-aos-delay="400">
+              <div class="icon-circle"><i class="fa-solid fa-business-time"></i></div>
+
+              <h5 class="service-title">Funciones especiales</h5>
+
+              <div class="description-inner">
+                <p class="service-desc mb-0">
+                  El LatinPOS incorpora a las funciones comunes de un POS, otras propias de la forma de hacer negocios
+                  en los mercados Latinos cuyos principales clientes son Latinos: “entrega fiada”, “déjalo en fondo”,
+                  etc. Si hay más de un mercado en la cadena, tanto la autorización de fiarle a un cliente como la
+                  utilización del fondo a su nombre, son válidos para todos los mercados de la cadena.
+                </p>
+              </div>
+
+              <a class="read-more-btn mt-3 d-inline-block">Ver más</a>
+            </div>
+          </div>
+          <!-- Card 8 -->
+          <div class="col-md-4">
+            <div class="service-card" data-aos="fade-up" data-aos-once="true" data-aos-delay="400">
+              <div class="icon-circle"><i class="fa-solid fa-arrow-up"></i></div>
+
+              <h5 class="service-title">En constante evolución.</h5>
+
+              <div class="description-inner">
+                <p class="service-desc mb-0">
+                  El LatinPOS está en evolución constante. El equipo de desarrollo continúa incorporando nuevas
+                  funcionalidades o re implementando las existentes para otros dispositivos o plataformas. Si hoy la
+                  base de la solución es aplicaciones Windows, se están duplicando las funciones de venta a dispositivos
+                  móviles: Smart Phones y Tablets.<br><br>
+                  Es política de la compañía y responsabilidad del equipo de venta, estar atento a las sugerencias de
+                  los clientes en tanto a realizar adecuaciones y extensiones al LatinPOS; que garanticen la
+                  satisfacción de sus usuarios y lo convierta en un referente dentro de los negocios Latinos que están
+                  en su mercado objetivo.
+
+                </p>
+              </div>
+
+              <a class="read-more-btn mt-3 d-inline-block">Ver más</a>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="col-md-4">
+            <div class="service-car" style="box-shadow:none !important">
+
+              <h5 class="service-title"></h5>
+
+              <div class="description-inner">
+                <p class="service-desc mb-0">
+
+                </p>
+              </div>
+
+              <a class="read-more-btn mt-3 d-inline-block"></a>
+            </div>
+          </div>
+
+
+
+        </div> <!-- /.row -->
+
+      </div> <!-- /.custom-max -->
+    </div>
+  </section>
+
+
+
+<!---------------------------- features-section ------------------------------>
+
+  <!-- Full Width Section -->
+  <section class="features-section py-5">
+    <div class="container custom-container">
+      <div class="row align-items-center g-4">
+
+        <!-- LEFT SIDE -->
+        <div class="col-md-6">
+          <h2 class="mb-3">¿Quiere saber más?</h2>
+          <strong>Videos explicativos</strong>
+          <p class="mb-4">
+            Hay dos videos explicativos que permiten conocer las características de la solución y muestran las opciones
+            principales de las dos aplicaciones que la conforman.<br>
+
+
+            <!---------------ADD VIDEO FILES HERE --------------->
+            <div id="download-buttons"></div>
+
+         <!--   <button class="download-multi" data-video="img/files/video.mp4" data-file="img/files/sample-local.pdf">
+              <i class="fa-solid fa-download"></i> Funciones del POS (15 minutos)
+            </button>
+
+            <br>
+            <button class="download-multi" data-video="img/files/video.mp4" data-file="img/files/sample-local.pdf">
+              <i class="fa-solid fa-download"></i> Funciones del Manager (18 minutos)
+            </button> -->
+          </p>
+
+          <!---------------ADD VIDEO FILES HERE CLOSE --------------->
+
+          <!-- ACCORDION -->
+          <div class="accordion" id="featureAccordion">
+
+            <!-- Item 1 (Open by default) -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#featureOne">
+                  Demo funcional
+                </button>
+              </h2>
+              <div id="featureOne" class="accordion-collapse collapse" data-bs-parent="#featureAccordion">
+                <div class="accordion-body">
+                  Si se dispone de un PC con el sistema operativo Windows 10 o superior y quiere comprobar por si mismo
+                  las funciones implementadas en el POS, descárguelo, cópielo hacia una carpeta en su PC, desempaquételo y
+                  ejecúte el archivo "LatinPOS.exe".<br><br>
+                  La aplicación accederá un mercado de prueba pre configurado. Siéntase libre de navegar por las
+                  opciones y registrar la información que considere oportuna. La limitante de esta demo radica en que
+                  cada día, a la 1:00 AM, se restaura la información original del mercado. Por tanto, cualquier
+                  información que se haya modificado, será borrada durante ese proceso.<br>
+                  <button class="download-multi" data-file="img/files/LatinPOS - Demo.zip">
+              <i class="fa-solid fa-download"></i> Descargar demo
+            </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#featureTwo">
+                  Versión de prueba
+                </button>
+              </h2>
+              <div id="featureTwo" class="accordion-collapse collapse" data-bs-parent="#featureAccordion">
+                <div class="accordion-body">
+                  Si se está interesado en adquirir el LatinPOS y se desea instalar una versión de prueba, basta
+                  llenar el formulario y nosotros pondremos a disposición del solicitante las dos aplicaciones
+                  que conforman la solución y el acceso a un mercado de prueba propio. <br><br>
+                  Ambas aplicaciones podrán instalarse en tantos PC como se quiera y darle acceso a los usuarios que se
+                  considere conveniente. La información que se modifique en ese mercado se mantendrá en línea por los
+                  siguientes 15 días calendario; contados a partir de la fecha en que el solicitante ejecute la
+                  aplicación por primera vez. <br><br>
+                  Durante los 15 días de prueba, se podrán realizar las consultas que estime pertinente o solicitar
+                  nuestra ayuda en cualquier momento. Si durante el período de prueba se decide contratar el servicio,
+                  la información registrada en el mercado de prueba podrá mantenerse o configurar el mercado desde
+                  cero.<br>
+                  <a href="#contact"><button class="accordian-btn">Contáctenos</button></a>
+
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+          <!-- /Accordion -->
+        </div>
+        <!-- /Left -->
+
+        <!-- RIGHT SIDE -->
+        <div class="col-md-6">
+          <div class="image-wrapper">
+            <img src="img/img-pos.png" alt="Section Image" class="img-fluid rounded">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+<!---------------------------- Precio ------------------------------>
+
+
+<section class="pricing-section" id="price">
+  <div class="inner-container">
+
+    <div class="pricing-grid">
+
+      <!-- Item 1 -->
+      <div class="pricing-card fade-in">
+        <div class="icon-circle-1">
+          <i class="fa-solid fa-dollar-sign"></i>
+        </div>
+        <h3 class="card-title">Precio</h3>
+        <p class="card-desc">
+          El precio del LatinPOS tiene 3 componentes.<br>
+          <strong>Costos de instalación</strong><br>
+          Monto fijo de $ 550.00 que se cobra una sola vez por mercado y cubre los siguientes elementos.
+          <ul style="font-size: 14px;">
+            <li>Evaluación y sugerencia de equipamiento</li>
+            <li>Instalación y actualización de equipos</li>
+            <li>Instalación de los componentes de la solución: POS y Manager</li>
+            <li>Configuración inicial de usuarios</li>
+            <li>Carga del catálogo de productos y diseño del menú inicial</li>
+            <li>Entrenamiento en el uso del POS y el Manager</li>
+            <li>Presencia física de un ejecutivo en el mercado; el día en que se comience a utilizar el POS</li>
+          </ul>
+        </p>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="pricing-card fade-in">
+        <div class="icon-circle-1">
+          <i class="fa-solid fa-file-invoice"></i>
+        </div>
+        <h3 class="card-title">Anualidad</h3>
+        <p class="card-desc">
+          Monto fijo de $130,00 que se cobra una vez al año. Este monto cubre la licencia de uso del LatinPOS y el derecho a recibir las actualizaciones y mejoras que se le agreguen. El primer cobro se realizará 6 meses después que se comience a utilizar el sistema.
+        </p>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="pricing-card fade-in">
+        <div class="icon-circle-1">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <h3 class="card-title">Mensualidad</h3>
+        <p class="card-desc">
+          Monto variable equivalente al 1% de las ventas netas. Este valor tiene un tope mínimo de $35.00 y máximo de $100.00. El cobro se realizará por mes vencido.<br>
+          <strong>Este monto cubre los siguientes elementos:</strong>
+          <ul style="font-size: 14px;">
+            <li>Utilización de los componentes de la solución</li>
+            <li>Almacenamiento y respaldo de los datos</li>
+            <li>Servicio de soporte</li>
+            <li>Revisión remota periódica y actualización de las estaciones POS</li>
+          </ul>
+        </p>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="pricing-card fade-in">
+        <div class="icon-circle-1">
+          <i class="fa-solid fa-headset"></i>
+        </div>
+        <h3 class="card-title">Precios por servicios a pedido</h3>
+        <p class="card-desc">
+          <ul style="font-size: 16px;">
+            <li>Configuración y reinstalación de la solución por cambio de equipo: $30.00</li>
+            <li>Capacitación adicional en el uso de la aplicación: </li>
+            <ul style="font-size: 14px;">
+              <li>Remota: $ 20.00 por hora.</li>
+              <li>Presencial: $ 20.00 por hora más $30 por la visita</li>
+            </ul>
+          </ul>
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!---------------------------- Servicio de soporte ------------------------------>
+
+
+  <section class="full-width-section">
+    <div class="inner-container">
+      <div class="container-grid">
+
+        <!-- Grid 1 -->
+        <div class="grid-item">
+          <h3>Servicio de soporte</h3>
+          <p class="grid-content">
+            Al recibir una incidencia, si ello lo amerita, los ejecutivos del servicio de soporte se conectarán en forma
+            remota a la estación POS o el computador donde se está ejecutando la aplicación en la que se produjo el
+            incidente. Es responsabilidad del usuario garantizar que el equipo esté encendido y conectado a
+            internet.<br>
+            En el caso de que se requiera una visita física, el momento de realizarla dependerá de la ubicación física
+            del mercado y la disponibilidad de personal en ese momento. El costo será de $50.00, monto que se incluirá
+            en la próxima factura que se emita al mercado.<br>
+            Si el reporte se recibe entre las 7:00 Am y las 7:00 Pm de lunes a viernes, el equipo de soporte atenderá la
+            incidencia de inmediato. Fuera de ese horario, la atención puede tener una demora.
+            La incidencia puede reportarse por teléfono o por eMail; a la cuenta de correo establecida con ese
+            propósito.
+
+          </p>
+          <button class="toggle-btn read-more">Ver más</button>
+        </div>
+
+        <!-- Grid 2 -->
+        <div class="grid-item">
+          <h3>Detención del servicio</h3>
+          <p class="grid-content">
+            El cliente puede solicitar la detención temporal o definitiva del servicio. Si la detención es temporal, la
+            información del mercado se mantendrá en línea, por un período de dos meses, sin costo adicional. Si en este
+            período se registra una venta, el software se activará en forma automática. Del monto a incluir en la
+            próxima factura se hará la deducción proporcional al tiempo en que el sistema se mantuvo inactivo.<br>
+            Si la detención se prolonga más allá del período señalado, la información permanecerá fuera de línea hasta
+            tanto el cliente indique que desea continuar utilizando el sistema. La solicitud debe realizarse con una
+            antelación de al menos dos días hábiles. La puesta en línea de la información tiene un costo de $50.00 e
+            incluye además la revisión remota y actualización del terminal utilizado en el mercado.
+
+          </p>
+          <button class="toggle-btn read-more">Ver más</button>
+        </div>
+
+        <!-- Grid 3 -->
+        <div class="grid-item">
+          <h3>Cierre del servicio</h3>
+          <p class="grid-content1" style="font-size: 15px;">
+            Si el cliente solicita el cierre definitivo del servicio, la información registrada del mercado será
+            eliminada. Antes de que ello ocurra, el cliente puede solicitar que se le entregue una copia en soporte
+            electrónico en un formato conocido. Esta entrega tiene un costo de $50.00 y la información estará disponible
+            dentro de los 7 días hábiles a partir de la recepción de la solicitud.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+<!---------------------------- form ------------------------------>
+
+
+  <section class="full-width-section" style="background: #e9e8f8;" id="contact">
+    <div class="inner-container">
+
+      <div class="two-box-wrapper">
+
+        <!-- LEFT BOX (50%) -->
+        <div class="box left-box">
+          <div class="gallery-grid">
+            <img src="img/img-pos.png" alt = img1">
+            <img src="img/img-manager.png" alt="img2">
+            <img src="img/pos.png" alt="img3">
+            <img src="img/img-mercado.jpg" alt="img4">
+          </div>
+        </div>
+
+        <!-- RIGHT BOX (50%) - FORM -->
+        <div class="box right-box">
+          <form class="compact-form" id="contactForm">
+
+  <input type="text" name="company_name" maxlength="50" placeholder="Nombre de la compañía" required>
+  <input type="text" name="alias" maxlength="20" placeholder="Alias" required>
+
+  <div class="two-col">
+    <input type="text" name="direccion" maxlength="50" placeholder="Dirección" required>
+    <input type="text" name="zipcode" maxlength="5" placeholder="Zipcode" required>
+  </div>
+
+  <input type="text" name="telefono" maxlength="12" placeholder="Teléfonos" required>
+  <input type="email" name="email" maxlength="30" placeholder="eMail" required>
+
+  <input type="text" name="contacto_nombre" maxlength="30" placeholder="Nombre del contacto" required>
+  <input type="text" name="cargo" maxlength="30" placeholder="Cargo" required>
+
+  <select name="tipo_mercado" required>
+    <option value="" disabled selected>Tipo de mercado</option>
+    <option>Cafetería</option>
+    <option>Minimarket</option>
+    <option>Food truck</option>
+  </select>
+
+  <button type="submit">Enviar</button>
+
+  <p id="formMessage" style="margin-top:10px; color:green; display:none;">
+    ✔ Tu formulario ha sido enviado con éxito.
+  </p>
+
+</form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+<!---------------------------- footer ------------------------------>
+
+
+  <footer>
+    <div class="footer-container">
+
+      <!-- SECTION 1: LOGO + DESCRIPTION + WHATSAPP -->
+      <div class="footer-section">
+        <div class="logo-wrapper d-flex align-items-center gap-2">
+          <a href="https://www.technospike.com/latin_pos">
+            <img src="img/image-white.png" alt="Logo" class="logo-img">
+          </a>
+          <div class="logo-text">
+            <span class="logo-title" style="color:#fff;">De Latino</span><br>
+            <span class="logo-title" style="color:#fff;">a Latino</span>
+          </div>
+        </div>
+
+        <p class="footer-desc">
+          Profesionalismo, transparencia y confidencialidad
+          son pilares de <br>nuestra organización.
+        </p>
+
+        
+      </div>
+
+      <!-- SECTION 2: COMPANY -->
+      <div class="footer-section">
+        <h4>Compañía</h4>
+        <ul>
+          <a href="about.html" style="font-size: 15px; color: #9fb3c8; text-decoration: none;"><li>Sobre nosotros.</li></a>
+        </ul>
+        
+
+        
+      </div>
+
+      <!-- SECTION 3: GALLERY -->
+      <div class="footer-section">
+      <h4>Encuéntranos en</h4>
+
+        <p class="contact-line"><a href="mailto:latinpos@balma4.com"><i class="fa-solid fa-envelope"></i>
+            latinpos@balma4.com</a></p>
+        <p class="contact-line"><a href="https://wa.me/7868203316"><i class="fa-brands fa-whatsapp"></i> +1 (786) 820 3316</a></p>
+        <div class="social-icons">
+          <a href="https://wa.me/7868203316" class="whatsapp-link" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="tel:7868203316" class="whatsapp-link" target="_blank"> <i class="fa-solid fa-phone" style=" font-size: 22px;"></i></a>
+         
+        </div>
+      </div>
+
+    </div>
+    <!-- COPYRIGHT SECTION -->
+    <div class="footer-copyright">
+      © 2025 LatinPOS — Todos los Derechos Reservados.
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/b83e2ea265.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+<script src="downloads.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("download-buttons");
+
+  // Create buttons without innerHTML to avoid layout glitches
+  DOWNLOAD_BUTTONS.forEach(btn => {
+    const button = document.createElement("button");
+    button.className = "download-multi";
+
+    // Create icon
+    const icon = document.createElement("i");
+    icon.className = "fa-solid fa-download";
+    button.appendChild(icon);
+
+    // Create text node
+    button.appendChild(document.createTextNode(" " + btn.label));
+
+    // Click event for multiple downloads
+    button.addEventListener("click", () => {
+      btn.files.forEach(file => {
+        const a = document.createElement("a");
+        a.href = file;
+        a.download = file.split("/").pop();
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+      });
+    });
+
+    container.appendChild(button);
+  });
+});
+</script>
+
+</body>
+
+</html>
